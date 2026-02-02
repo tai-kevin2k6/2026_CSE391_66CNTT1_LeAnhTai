@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="inner-container">
+      <div class="header">
+        <div class="header-left">
+          <div class="header-brand">
+            <h2>HR Management</h2>
+          </div>
+          <div class="header-menu">
+            <a href="#home">Home</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <div class="header-search">
+          <input type="text" placeholder="Search..." />
+          <button>Search</button>
+        </div>
+      </div>
+      <div class="main">
+        <div class="header-action">
+          <h2>Employee</h2>
+          <button class="btn-add">+ Add</button>
+        </div>
+        <table class="employee-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Position</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Fatima Beatriz</td>
+              <td>fatima@gmail.com</td>
+              <td>0985674321</td>
+              <td>Staff</td>
+              <td>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Gabriel Hanna</td>
+              <td>gabriel@gmail.com</td>
+              <td>0353674231</td>
+              <td>Staff</td>
+              <td>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Ariana Grande</td>
+              <td>ariana@gmail.com</td>
+              <td>0357423231</td>
+              <td>CEO</td>
+              <td>
+                <button class="btn-edit">Edit</button>
+                <button class="btn-delete">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="employeeModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>New Employee</h3>
+          <span class="close-btn">&times;</span>
+        </div>
+        <form class="modal-body">
+          <div class="form-row">
+            <div class="form-group-modal">
+              <label>Name</label>
+              <input type="text" placeholder="Enter name" />
+            </div>
+            <div class="form-group-modal">
+              <label>Email</label>
+              <input type="email" placeholder="Enter email" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group-modal">
+              <label>Phone</label>
+              <input type="text" placeholder="Enter phone" />
+            </div>
+            <div class="form-group-modal">
+              <label>Position</label>
+              <select>
+                <option>-- Select Position --</option>
+                <option>Staff</option>
+                <option>Manager</option>
+                <option>CEO</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-footer-modal">
+            <button type="submit" class="btn-save">Save</button>
+            <button type="button" class="btn-close-modal">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      const modal = document.getElementById("employeeModal");
+      const btnAdd = document.querySelector(".btn-add");
+      const closeBtn = document.querySelector(".close-btn");
+      const btnCancel = document.querySelector(".btn-close-modal");
+      btnAdd.onclick = function () {
+        modal.style.display = "block";
+      };
+      const closeModal = () => {
+        modal.style.display = "none";
+      };
+      closeBtn.onclick = closeModal;
+      btnCancel.onclick = closeModal;
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          closeModal();
+        }
+      };
+    </script>
+  </body>
+</html>

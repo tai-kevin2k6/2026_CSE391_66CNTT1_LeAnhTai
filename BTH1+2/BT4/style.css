@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+.inner-container {
+    border: 1px solid black;
+    margin: 10px 20px;
+    padding: 10px 20px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.form {
+    padding: 20px
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+.form-container {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}

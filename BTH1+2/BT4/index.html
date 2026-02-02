@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="inner-container">
+      <div class="form">
+        <h3>Basic Info</h3>
+        <hr />
+        <div class="form-container">
+          <label for="emp-id">Employee ID</label>
+          <input type="text" id="emp-id" />
+        </div>
+        <div class="form-container">
+          <label for="emp-lastname">Last Name</label>
+          <input type="text" id="emp-lastname" />
+        </div>
+        <div class="form-container">
+          <label for="emp-firstname">Last Name</label>
+          <input type="text" id="emp-firstname" />
+        </div>
+        <div class="form-container">
+          <label for="emp-gender">Gender</label>
+          <div class="input-radio-group">
+            <label><input type="radio" name="gender" value="male" />Male</label>
+            <label
+              ><input type="radio" name="gender" value="female" />Female</label
+            >
+          </div>
+        </div>
+        <div class="form-container">
+          <label for="emp-title">Title</label>
+          <input type="text" id="emp-title" />
+        </div>
+        <div class="form-container">
+          <label for="emp-suffix">Suffix</label>
+          <input type="text" id="emp-suffix" />
+        </div>
+        <div class="form-container">
+          <label for="emp-birthdate">Birthdate</label>
+          <input type="date" id="emp-birthdate" />
+        </div>
+        <div class="form-container">
+              <label for="emp-birthdate">Hiredate</label>
+              <input type="date" id="emp-hiredate" /></div
+          >
+        <div class="form-container">
+          <label for="emp-snn">SSN # (if applicable)</label>
+          <input type="text" id="emp-snn" />
+        </div>
+        <div class="form-container">
+          <label for="emp-report-to">Report To</label>
+          <select name="report-to" id="emp-report-to">
+            <option value="buchanan">Buchanan</option>
+            <option value="hcm">Hồ Chí Minh</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form">
+        <h3>Contact Info</h3>
+        <hr />
+        <div class="form-container">
+          <label for="emp-email">Email</label>
+          <input type="text" id="emp-email" />
+        </div>
+        <div class="form-container">
+          <label for="emp-address">Address</label>
+          <input type="text" id="emp-address" />
+        </div>
+        <div class="form-container">
+          <label for="emp-city">City</label>
+          <input type="text" id="emp-city" />
+        </div>
+        <div class="form-container">
+          <label for="emp-region">Region</label>
+          <input type="text" id="emp-region" />
+        </div>
+        <div class="form-container">
+          <label for="emp-postal-code">Postal Code</label>
+          <input type="text" id="emp-postal-code" />
+        </div>
+        <div class="form-container">
+          <label for="emp-country">Country</label>
+          <select name="country" id="emp-country">
+            <option value="hanoi">Hà Nội</option>
+            <option value="hcm">Hồ Chí Minh</option>
+          </select>
+        </div>
+        <div class="form-container">
+          <label for="emp-us-home-phone">US Home Phone</label>
+          <input type="text" id="emp-us-home-phone" />
+        </div>
+        <div class="form-container">
+          <label for="emp-photo">Photo</label>
+          <input type="file" id="emp-us-home-phone" />
+        </div>
+      </div>
+
+      <div class="form">
+        <h3>Optional Info</h3>
+        <hr />
+      </div>
+    </div>
+  </body>
+</html>

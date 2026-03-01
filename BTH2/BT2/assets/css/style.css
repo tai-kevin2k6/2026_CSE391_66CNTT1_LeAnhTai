@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+} 
+
+body {
+    background-color: #ccf5f1;
+}
+
+#page-logo a {
+  font-family: 'Oleo Script', cursive;
+  color: #ffde59;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(193, 193, 0);
+}
+
+#hero {
+  background-image: url("/2026_CSE391_66CNTT1_LeAnhTai/BTH2/BT2/assets/images/ocean.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-content {
+  background-color: rgba(40, 40, 40, 0.85); /* Nền đen trong suốt */
+  padding: 40px 60px;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+#hero-content h1 {
+  margin: 0 0 10px 0;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+#hero-content a {
+  background-color: #ffde59;
+  color: #222;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+}   
+
+#hero-content p {
+  margin: 0 0 30px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ccc;
+}
+
+#highlights {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#highlights h2 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+#destinations {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px; 
+}
+
+.destination {
+  width: 300px;
+}
+
+.destination img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; 
+  border-radius: 12px;
+}
+
+.destination p {
+  margin-top: 15px;
+  color: #555;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.destination strong {
+  color: #00b4d8;
+}
+
+footer {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.2s;
+}
+
+footer img:hover {
+  transform: scale(1.1);
+}
+

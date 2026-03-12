@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <form id="register-form" novalidate>
+        <div class="form-row">
+          <label for="full-name">Họ và tên: </label>
+          <input type="text" name="full-name" id="form-row-fullname" placeholder="Nguyễn Văn A">
+          <span class="error" id="error-fullname"></span>
+        </div>
+        <div class="form-row">
+          <label for="email">Email: </label>
+          <input type="text" name="email" id="form-row-email" placeholder="nguyenvana@example.com">
+          <span class="error" id="error-email"></span>
+        </div>
+        <div class="form-row">
+          <label for="phone">Số điện thoại: </label>
+          <input type="text" name="phone" id="form-row-phone" placeholder="0987654321">
+          <span class="error" id="error-phone"></span>
+        </div>
+        <div class="form-row">
+          <label for="password">Mật khẩu: </label>
+          <input type="password" name="password" id="form-row-password" placeholder="Example@123">
+          <span class="error" id="error-password"></span>
+        </div>
+        <div class="form-row">
+          <label for="re-password">Nhập lại mật khẩu: </label>
+          <input type="password" name="re-password" id="form-row-re-password">
+          <span class="error" id="error-re-password"></span>
+        </div>
+        <div class="form-row">
+          <label>Giới tính: </label>
+          <input type="radio" name="gender" id="form-row-gender-male" value="male">
+          <label for="form-row-gender-male">Nam</label>
+          <input type="radio" name="gender" id="form-row-gender-female" value="female">
+          <label for="form-row-gender-female">Nữ</label>
+          <span class="error" id="error-gender"></span>
+        </div>
+        <div class="form-row">
+          <input type="checkbox" name="term" id="form-row-term">
+          <label for="form-row-term">Điều khoản ABCXYZ</label>
+          <span class="error" id="error-term"></span>
+        </div>
+        <button type="submit">Đăng ký</button>
+      </form>
+      <div id="success-message" style="display:none;"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</body>
+</html>

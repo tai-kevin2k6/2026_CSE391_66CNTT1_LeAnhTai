@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <div class="input-container">
+          <div class="form-label" >
+            <label for="full-name">Họ và tên: </label>
+            <input type="text" name="full-name" id="full-name" />
+          </div>
+          <div class="form-label">
+            <label for="mark">Điểm: </label>
+            <input type="text" name="mark" id="mark" />
+          </div>
+          <button class="btn btn-success">Thêm</button>
+        </div>
+        <div class="search-bar">
+          <input type="text" name="keyword" id="keyword" placeholder="Tìm kiếm: " />
+          <button class = "btn btn-search border-dark" id="btn-search"><i class="bi bi-search"></i></button>
+          <select id="grade-filter" class="form-select">
+            <option value="">Tất cả</option>
+            <option value="Giỏi">Giỏi</option>
+            <option value="Khá">Khá</option>
+            <option value="Trung Bình">Trung Bình</option>
+            <option value="Yếu">Yếu</option>
+          </select>
+        </div>
+      </div>
+      <table class="table table-student">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Họ tên</th>
+            <th id="sort-mark">Điểm <span id="sort-arrow"></span></th>
+            <th>Xếp loại</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+        <tbody class ="table-body">
+
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
